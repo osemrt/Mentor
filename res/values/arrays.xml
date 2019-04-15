@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="intro_titles">
+        <item>Doctors</item>
+        <item>Medicine</item>
+        <item>Appointments</item>
+    </string-array>
+
+
+    <string-array name="intro_descriptions">
+        <item>Find expert doctors for perticular problem on one tap</item>
+        <item>Allopathic, Ayurvedic and all type of medicines can be bought from here</item>
+        <item>Book appointments and get best treatment on one tap</item>
+    </string-array>
+</resources>

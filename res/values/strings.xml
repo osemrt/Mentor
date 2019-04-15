@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mentor</string>
+    <string name="intro_title">Doctors</string>
+    <string name="intro_description">Find expert doctors for perticular problem  on one tap</string>
+    <string name="intro_button_back_sign"><![CDATA[<]]></string>
+    <string name="intro_button_next_sign"><![CDATA[>]]></string>
+    <string name="intro_button_getting_started">Getting Started</string>
+</resources>
