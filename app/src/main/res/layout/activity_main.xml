@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/main_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_main">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/big_logo_2" />
+
+
+    </Toolbar>
+
+    <!--Shadow-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/intro_shadow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:columnCount="1"
+            app:rowCount="4">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_icon_height"
+                    android:background="@drawable/menu_icon_border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_menu_doctors" />
+
+                    <TextView
+                        style="@style/menu_ic_titles"
+                        android:fontFamily="@font/gothamroundedbook"
+                        android:text="@string/menu_doctors" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_icon_height"
+                    android:background="@drawable/menu_icon_border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_menu_news" />
+
+                    <TextView
+                        style="@style/menu_ic_titles"
+                        android:fontFamily="@font/gothamroundedbook"
+                        android:text="@string/menu_news" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_icon_height"
+                    android:background="@drawable/menu_icon_border"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_menu_appointments" />
+
+                    <TextView
+                        style="@style/menu_ic_titles"
+                        android:fontFamily="@font/gothamroundedbook"
+                        android:text="@string/menu_my_appointments" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:columnCount="2"
+                app:rowCount="1">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/menu_icon_width"
+                        android:layout_height="@dimen/menu_icon_height"
+                        android:background="@drawable/menu_icon_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_menu_my_profile" />
+
+                        <TextView
+                            style="@style/menu_ic_titles"
+                            android:fontFamily="@font/gothamroundedbook"
+                            android:text="@string/menu_my_profile" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/menu_icon_width"
+                        android:layout_height="@dimen/menu_icon_height"
+                        android:background="@drawable/menu_icon_border"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_menu_logout" />
+
+                        <TextView
+                            style="@style/menu_ic_titles"
+                            android:fontFamily="@font/gothamroundedbook"
+                            android:text="@string/menu_logout" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.gridlayout.widget.GridLayout>
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

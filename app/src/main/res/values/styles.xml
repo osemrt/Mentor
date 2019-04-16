@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBlue</item>
+        <item name="colorAccent">@color/colorBlue</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme_NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorLightGray</item>
+        <item name="colorAccent">@color/colorBlue</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:fontFamily">@font/ralewaybold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="edit_text_style">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bg_empty</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:textColor">@color/colorLightGray3</item>
+    </style>
+
+    <style name="header_textView_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/gothamroundedbold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorMainBlue</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="sub_textView_style">
+        <item name="android:textColor">@color/colorLightGray4</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="menu_ic_titles">
+        <item name="android:textColor">@color/colorLightGray5</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="toolbar_title">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/ralewaybold</item>
+    </style>
+
+</resources>

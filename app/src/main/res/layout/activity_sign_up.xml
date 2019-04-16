@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_above="@id/sign_up_textView"
+        android:layout_marginBottom="35dp">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="55dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back_arrow_bold_gray" />
+    </Toolbar>
+
+
+    <TextView
+        android:id="@+id/sign_up_textView"
+        style="@style/header_textView_style"
+        android:layout_above="@id/sign_up_linearLayout"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/button_text_sign_up" />
+
+    <LinearLayout
+        android:id="@+id/sign_up_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="120dp"
+
+        android:divider="@drawable/divider2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <EditText
+            style="@style/edit_text_style"
+            android:hint="@string/edit_text_hint_name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            style="@style/edit_text_style"
+            android:hint="@string/edit_text_hint_email"
+            android:inputType="textEmailAddress" />
+
+
+        <EditText
+            style="@style/edit_text_style"
+            android:hint="@string/edit_text_hint_phone_number"
+            android:inputType="phone" />
+
+
+        <EditText
+            style="@style/edit_text_style"
+            android:hint="@string/edit_text_hint_password"
+            android:inputType="textPassword" />
+
+
+        <EditText
+            style="@style/edit_text_style"
+            android:hint="@string/edit_text_hint_confirm_password"
+            android:inputType="textPassword" />
+
+        <Button
+            style="@style/button_style"
+            android:text="@string/button_text_sign_up" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="intro_titles">
+        <item>Doctors</item>
+        <item>Medicine</item>
+        <item>Appointments</item>
+    </string-array>
+
+
+    <string-array name="intro_descriptions">
+        <item>Find expert doctors for perticular problem on one tap</item>
+        <item>Allopathic, Ayurvedic and all type of medicines can be bought from here</item>
+        <item>Book appointments and get best treatment on one tap</item>
+    </string-array>
+
+    <string-array name="specialists">
+        <item>Specialist Doctor</item>
+        <item>Audiologist</item>
+        <item>Allergist</item>
+        <item>Cardiologist</item>
+        <item>Anesthesiologist</item>
+        <item>Dentist</item>
+        <item>Dermatologist</item>
+        <item>Endocrinologist</item>
+        <item>Epidemiologists</item>
+        <item>Neurologist</item>
+        <item>Oncologist</item>
+        <item>Psychiatrists</item>
+        <item>Urologist</item>
+        <item>Veterinarian</item>
+    </string-array>
+
+    <string-array name="genders">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <!--Test arrays!-->
+
+    <string-array name="test_array_doctor_names">
+        <item>Dr. Vivek Thakur</item>
+        <item>Dr. Sagar</item>
+        <item>Dr. Ashish</item>
+        <item>Dr. Guru Barap</item>
+        <item>Dr. Vivek Thakur</item>
+        <item>Dr. Diksha Sen</item>
+    </string-array>
+
+
+    <string-array name="test_array_doctor_specialists">
+        <item>Cardiology</item>
+        <item>Cardiology</item>
+        <item>Cardiology</item>
+        <item>Cardiology</item>
+        <item>Cardiology</item>
+        <item>Cardiology</item>
+    </string-array>
+
+    <string-array name="test_array_doctor_costs">
+        <item>4.5</item>
+        <item>2.2</item>
+        <item>3.2</item>
+        <item>1.5</item>
+        <item>5.0</item>
+        <item>3.7</item>
+    </string-array>
+
+    <string-array name="test_array_users">
+        <item>Lina Rose</item>
+        <item>Lina Rose</item>
+        <item>Lina Rose</item>
+        <item>Lina Rose</item>
+        <item>Lina Rose</item>
+        <item>Lina Rose</item>
+        <item>Lina Rose</item>
+        <item>Lina Rose</item>
+        <item>Lina Rose</item>
+        <item>Lina Rose</item>
+    </string-array>
+
+    <string-array name="test_array_user_review">
+        <item>The Good Doctor would really like to make you feel good. And that\'s not always a good thing. ABC\'s new medical drama</item>
+        <item>The Good Doctor would really like to make you feel good. And that\'s not always a good thing. ABC\'s new medical drama</item>
+        <item>The Good Doctor would really like to make you feel good. And that\'s not always a good thing. ABC\'s new medical drama</item>
+        <item>The Good Doctor would really like to make you feel good. And that\'s not always a good thing. ABC\'s new medical drama</item>
+        <item>The Good Doctor would really like to make you feel good. And that\'s not always a good thing. ABC\'s new medical drama</item>
+        <item>The Good Doctor would really like to make you feel good. And that\'s not always a good thing. ABC\'s new medical drama</item>
+        <item>The Good Doctor would really like to make you feel good. And that\'s not always a good thing. ABC\'s new medical drama</item>
+        <item>The Good Doctor would really like to make you feel good. And that\'s not always a good thing. ABC\'s new medical drama</item>
+        <item>The Good Doctor would really like to make you feel good. And that\'s not always a good thing. ABC\'s new medical drama</item>
+        <item>The Good Doctor would really like to make you feel good. And that\'s not always a good thing. ABC\'s new medical drama</item>
+    </string-array>
+
+
+    <string-array name="test_array_review_date">
+        <item>(25-09-2017)</item>
+        <item>(25-09-2017)</item>
+        <item>(25-09-2017)</item>
+        <item>(25-09-2017)</item>
+        <item>(25-09-2017)</item>
+        <item>(25-09-2017)</item>
+        <item>(25-09-2017)</item>
+        <item>(25-09-2017)</item>
+        <item>(25-09-2017)</item>
+        <item>(25-09-2017)</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/header_textView_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_in_linearLayout"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/header_sign_in" />
+
+    <LinearLayout
+        android:id="@+id/sign_in_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:divider="@drawable/divider2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <EditText
+            android:id="@+id/editText4"
+            style="@style/edit_text_style"
+            android:hint="@string/edit_text_hint_email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editText5"
+            style="@style/edit_text_style"
+            android:hint="@string/edit_text_hint_password"
+            android:inputType="textPassword" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                style="@style/sub_textView_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/remember" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/forget_password" />
+        </LinearLayout>
+
+        <Button
+            style="@style/button_style"
+            android:text="@string/button_text_log_in" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_empty"
+                android:src="@drawable/sign_in_facebook" />
+
+            <ImageButton
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_empty"
+                android:src="@drawable/sign_in_google_plus" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:divider="@drawable/divider"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothamroundedbold"
+            android:gravity="end"
+            android:text="@string/dont_have_an_account" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gothamroundedbold"
+            android:text="@string/create_account"
+            android:textColor="@color/colorMainBlue" />
+    </LinearLayout>
+
+</RelativeLayout>
