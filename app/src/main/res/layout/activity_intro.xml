@@ -71,13 +71,14 @@
                 android:orientation="horizontal">
 
 
-                <Button
+                <ImageButton
                     android:id="@+id/intro_back_button"
                     android:layout_width="60dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_alignParentStart="true"
                     android:background="@color/colorBlue"
                     android:fontFamily="@font/gothamroundedbold"
+                    android:src="@drawable/ic_intro_back_arrow"
                     android:text="@string/intro_button_back_sign"
                     android:textColor="@color/colorWhite"
                     android:textSize="32sp"
@@ -102,13 +103,14 @@
                     android:text="@string/intro_button_getting_started"
                     android:visibility="invisible" />
 
-                <Button
+                <ImageButton
                     android:id="@+id/intro_next_button"
                     android:layout_width="60dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_alignParentEnd="true"
-                    android:background="@color/colorBlue"
+                    android:background="@drawable/bg_intro_button"
                     android:fontFamily="@font/gothamroundedbold"
+                    android:src="@drawable/ic_intro_next_arrow"
                     android:text="@string/intro_button_next_sign"
                     android:textColor="@color/colorWhite"
                     android:textSize="32sp" />

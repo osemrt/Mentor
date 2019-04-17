@@ -17,12 +17,19 @@
             android:name="activities.FirstActivity"
             android:theme="@style/AppTheme_NoActionBar">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
 
 
         <activity
             android:name="activities.IntroActivity"
             android:theme="@style/AppTheme_NoActionBar" />
+
 
         <activity
             android:name="activities.SignInActivity"
@@ -58,15 +65,42 @@
 
         <activity
             android:name="activities.ReviewActivity"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="activities.AppointmentActivity"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="activities.CreateAppointmentActivity"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="activities.BookAppointmentCalenderActivity"
+            android:theme="@style/AppTheme"></activity>
+
+
+        <activity
+            android:name="activities.BookAppointmentTimeActivity"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name="activities.NewsActivity"
             android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
 
         </activity>
+
+        <activity
+            android:name="activities.NewsPreviewActivity"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="activities.EventListActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity android:name="activities.UserProfileActivity"></activity>
 
 
     </application>

@@ -7,6 +7,7 @@
     <string name="intro_button_getting_started">Getting Started</string>
 
     <string name="edit_text_hint_email">E-mail</string>
+    <string name="edit_text_hint_problem">Problem</string>
     <string name="edit_text_hint_password">Password</string>
     <string name="edit_text_hint_confirm_password">Confirm Password</string>
     <string name="edit_text_hint_name">Name</string>
@@ -57,15 +58,44 @@
     <string name="calling">Calling...</string>
 
 
-    <!--Test strings-->
-    <string name="test_docors_list_name">Dr. Vivek Thakur</string>
-    <string name="test_docors_list_specialist">Peditrician</string>
-    <string name="test_docors_list_cost">4.5</string>
 
 
     <string name="review_user_name">Lina Rose</string>
     <string name="review_user_review">The Good Doctor would really like to make you feel good. And that\'s not always a good thing. ABC\'s new medical drama</string>
     <string name="review_date">(16-04-2019)</string>
+    <string name="test_createAppointment_data">17 April 2019</string>
+    <string name="test_createAppointment_time">17:00</string>
+    <string name="toolbar_appointment_details">Appointment Details</string>
+    <string name="toolbar_appointment">Appointment</string>
+    <string name="create_appointment">Create an appointment</string>
+    <string name="toolbar_book_appointment">Book Appointment</string>
+    <string name="toolbar_user_profile">User Profile</string>
+    <string name="user_profile_age">Age</string>
+    <string name="user_profile_test_age">22</string>
+    <string name="user_profile_age_subtext">years</string>
+    <string name="user_profile_blood">Blood</string>
+    <string name="user_profile_gender">Gender</string>
+    <string name="user_profile_height">Height</string>
+    <string name="user_profile_weight">Weight</string>
+    <string name="toolbar_news">News</string>
+    <string name="calender_header">April 2019</string>
+
+
+    <!--Test strings-->
+    <string name="test_docors_list_name">Dr. Vivek Thakur</string>
+    <string name="test_docors_list_specialist">Peditrician</string>
+    <string name="test_docors_list_cost">4.5</string>
+
+    <string name="test_news_title">What is Lorem Ipsum?</string>
+    <string name="test_news">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.\n</string>
+    <string name="toolbar_event_list">Event List</string>
+    <string name="user_profile_test_blood">AB rh+</string>
+    <string name="user_profile_test_gender">Male</string>
+    <string name="balance">Balance</string>
+    <string name="amount">250</string>
+    <string name="button_text_deposit">Deposit</string>
+    <string name="button_text_withdraw">Withdraw</string>
+    <string name="msg_account_not_found">The username and password you entered did not match our records. Please double-check and try again.</string>
 
 
 </resources>

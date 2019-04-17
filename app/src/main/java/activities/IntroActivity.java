@@ -8,6 +8,7 @@ import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -18,9 +19,9 @@ import ui.SliderAdapter;
 public class IntroActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
 
     private ViewPager viewPager;
-    private Button backButton;
+    private ImageButton backButton;
+    private ImageButton nextButton;
     private LinearLayout linearLayout;
-    private Button nextButton;
     private Button gettingStartedButton;
 
     private ImageView[] dots;
@@ -43,8 +44,8 @@ public class IntroActivity extends AppCompatActivity implements ViewPager.OnPage
     private void setUp() {
         linearLayout = (LinearLayout) findViewById(R.id.intro_linearLayout);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
-        backButton = (Button) findViewById(R.id.intro_back_button);
-        nextButton = (Button) findViewById(R.id.intro_next_button);
+        backButton = (ImageButton) findViewById(R.id.intro_back_button);
+        nextButton = (ImageButton) findViewById(R.id.intro_next_button);
         gettingStartedButton = (Button) findViewById(R.id.intro_gettingStarted_button);
 
         viewPager.addOnPageChangeListener(this);
@@ -76,7 +77,7 @@ public class IntroActivity extends AppCompatActivity implements ViewPager.OnPage
         gettingStartedButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(context, CallingActivity.class));
+                startActivity(new Intent(context, SignInActivity.class));
                 finish();
             }
         });
@@ -114,8 +115,7 @@ public class IntroActivity extends AppCompatActivity implements ViewPager.OnPage
             nextButton.setEnabled(true);
             backButton.setVisibility(View.INVISIBLE);
 
-            backButton.setText("");
-            nextButton.setText(">");
+            nextButton.setImageResource(R.drawable.ic_intro_next_arrow);
 
         } else if (i == dots.length - 1) {
 
@@ -135,8 +135,9 @@ public class IntroActivity extends AppCompatActivity implements ViewPager.OnPage
             backButton.setVisibility(View.VISIBLE);
             nextButton.setVisibility(View.VISIBLE);
 
-            backButton.setText("<");
-            nextButton.setText(">");
+
+            backButton.setImageResource(R.drawable.ic_intro_back_arrow);
+            nextButton.setImageResource(R.drawable.ic_intro_next_arrow);
 
         }
 
