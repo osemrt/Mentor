@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProfileUserDetailsActivity"></activity>
+        <activity android:name=".ProfileUserDetailsActivity"/>
         <activity
             android:name=".FirstActivity"
             android:theme="@style/AppTheme_NoActionBar">

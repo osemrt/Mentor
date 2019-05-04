@@ -1,8 +1,7 @@
-package activities;
+package com.example.mentor;
 
 import android.os.Bundle;
 
-import com.example.mentor.R;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
