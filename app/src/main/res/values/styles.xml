@@ -13,7 +13,7 @@
     <style name="AppTheme_NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorLightGray</item>
+        <item name="colorPrimaryDark">@color/colorLightGray6</item>
         <item name="colorAccent">@color/colorBlue</item>
     </style>
 
@@ -73,6 +73,11 @@
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textSize">32sp</item>
         <item name="android:fontFamily">@font/ralewaybold</item>
+    </style>
+
+    <style name="user_details_spinner" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/colorLightGray4</item>
+        <item name="android:fontFamily">@font/gothamroundedbold</item>
     </style>
 
 

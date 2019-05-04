@@ -55,12 +55,12 @@
                 android:background="@drawable/bg_user_profile" />
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/profile_photo_view"
+                android:id="@+id/user_details_photo_view"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="25dp"
-                android:src="@drawable/ic_loading"
+                android:src="@drawable/ic_upload_image"
                 app:civ_border_color="@color/colorLightGray2"
                 app:civ_border_width="2dp" />
 
@@ -69,8 +69,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/profile_prioritized_name"
+                <EditText
+                    android:id="@+id/user_details_prioritized_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -78,109 +78,17 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="160dp"
                     android:layout_marginBottom="20dp"
+                    android:maxLines="1"
+                    android:maxLength="25"
                     android:fontFamily="@font/gothamroundedbold"
                     android:gravity="center"
                     android:text="@string/test_docors_list_name"
                     android:textColor="@color/colorMainBlue" />
 
-
-                <LinearLayout
-                    android:id="@+id/profile_balance_layout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/profile_prioritized_name"
-                    android:layout_centerHorizontal="true"
-                    android:background="@drawable/bg_empty"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="15dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:background="@drawable/ic_wallet" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/gothamroundedbold"
-                            android:text="@string/balance" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/profile_account_monetary_unit"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="2dp"
-                                android:fontFamily="@font/gothamroundedbold"
-                                android:text="@string/dollar_sign" />
-
-                            <TextView
-                                android:id="@+id/profile_balance"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/gothamroundedbold"
-                                android:text="@string/amount" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <Button
-                            android:id="@+id/profile_deposit_btn"
-                            style="@style/button_style"
-                            android:layout_width="120dp"
-                            android:layout_marginBottom="10dp"
-                            android:height="30dp"
-                            android:text="@string/button_text_deposit" />
-
-                        <Button
-                            android:id="@+id/profile_withdraw_btn"
-                            style="@style/button_style"
-                            android:layout_width="120dp"
-                            android:layout_marginBottom="10dp"
-                            android:width="30dp"
-                            android:text="@string/button_text_withdraw" />
-
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/profile_balance_layout"
-                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/user_details_prioritized_name"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="30dp"
                     android:divider="@drawable/line_divider_horizontal"
@@ -199,10 +107,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_marginEnd="20dp"
+                            android:layout_marginRight="10dp"
                             android:gravity="center"
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/user_details_age_title"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="5dp"
@@ -212,10 +122,12 @@
                                 android:textSize="16sp" />
 
 
-                            <TextView
-                                android:id="@+id/profile_age"
+                            <EditText
+                                android:id="@+id/user_details_age"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:maxLength="3"
                                 android:fontFamily="@font/gothamroundedbold"
                                 android:text="@string/user_profile_test_age"
                                 android:textColor="@color/colorLightGray4" />
@@ -232,12 +144,13 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
                             android:gravity="center"
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/user_details_blood_title"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="5dp"
@@ -246,22 +159,32 @@
                                 android:textColor="@color/colorBlack"
                                 android:textSize="16sp" />
 
-                            <TextView
-                                android:id="@+id/profile_blood"
+                            <Spinner
+                                android:id="@+id/user_details_blood_spinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorLightGray4"
+                                android:fontFamily="@font/gothamroundedbold"
+                                style="@style/user_details_spinner"/>
+<!--
+                            <EditText
+                                android:id="@+id/user_details_blood"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/gothamroundedbold"
+                                android:maxLength="8"
+                                android:maxLines="1"
                                 android:text="AB+"
                                 android:textColor="@color/colorLightGray4" />
-
+-->
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="20dp"
                             android:gravity="center"
+                            android:layout_marginRight="-20dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -273,14 +196,24 @@
                                 android:textColor="@color/colorBlack"
                                 android:textSize="16sp" />
 
-                            <TextView
-                                android:id="@+id/profile_gender"
+                            <Spinner
+                                android:id="@+id/user_details_gender_spinner"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                style="@style/user_details_spinner"
+                                />
+<!--
+                            <EditText
+                                android:id="@+id/user_details_gender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:maxLength="6"
                                 android:fontFamily="@font/gothamroundedbold"
                                 android:text="@string/user_profile_test_gender"
                                 android:textColor="@color/colorLightGray4" />
-
+-->
                         </LinearLayout>
 
 
@@ -298,7 +231,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/profile_name_title"
+                                android:id="@+id/user_details_name_title"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Name"
@@ -307,8 +240,8 @@
                                 android:textColor="@color/colorBlack"
                                 android:textSize="16sp" />
 
-                            <TextView
-                                android:id="@+id/profile_name"
+                            <EditText
+                                android:id="@+id/user_details_name"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Mustafa"
@@ -326,7 +259,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/profile_surname_title"
+                                android:id="@+id/user_details_surname_title"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Surname"
@@ -335,8 +268,8 @@
                                 android:textColor="@color/colorBlack"
                                 android:textSize="16sp" />
 
-                            <TextView
-                                android:id="@+id/profile_surname"
+                            <EditText
+                                android:id="@+id/user_details_surname"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Katipoglu"
@@ -347,38 +280,36 @@
                                 android:textColor="@color/colorLightGray4" />
 
                         </LinearLayout>
-
-
-
+<!--
+                        <Button
+                            android:id="@+id/user_details_save_btn"
+                            style="@style/button_style"
+                            android:layout_width="250dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:onClick="updateContent"
+                            android:text="Save" />
+-->
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical">
-                    <Button
-                        android:id="@+id/profile_update_btn"
-                        style="@style/button_style"
-                        android:layout_width="150dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginTop="30dp"
-                        android:onClick="goUserDetails"
-                        android:text="Update Details" />
-                    <Button
-                        android:id="@+id/profile_home_btn"
-                        style="@style/button_style"
-                        android:layout_width="250dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginBottom="20dp"
-                        android:onClick="goHome"
-                        android:text="@string/button_text_home" />
-                </LinearLayout>
+                        <Button
+                            android:id="@+id/user_details_profile_btn"
+                            style="@style/button_style"
+                            android:layout_width="250dp"
 
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:onClick="goProfile"
+                            android:text="Profile" />
+
+                    </LinearLayout>
 
 
 

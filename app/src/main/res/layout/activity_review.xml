@@ -18,11 +18,15 @@
 
 
             <ImageButton
-                android:layout_width="wrap_content"
+                android:id="@+id/activityReview_backButton"
+                android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="18dp"
                 android:background="@android:color/transparent"
+                android:onClick="goBack"
+                android:paddingStart="-20dp"
+                android:paddingEnd="0dp"
                 android:src="@drawable/back_arrow" />
 
             <TextView
@@ -56,7 +60,7 @@
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/review_imageView"
+                android:id="@+id/activityReview_circularImage"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="30dp"
@@ -76,7 +80,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/doctor_doctorName"
+                        android:id="@+id/activityReview_doctorNameTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="2dp"
@@ -86,7 +90,7 @@
                         android:textColor="@color/colorMainBlue" />
 
                     <TextView
-                        android:id="@+id/doctor_doctorSpecialist"
+                        android:id="@+id/activityReview_doctorSpecialistTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/gothamroundedlight"

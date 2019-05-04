@@ -18,11 +18,13 @@
 
 
             <ImageButton
+                android:id="@+id/book_appointment_go_back_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
                 android:background="@android:color/transparent"
+                android:onClick="goBack"
                 android:src="@drawable/back_arrow" />
 
             <TextView
@@ -61,9 +63,9 @@
             android:showDividers="middle">
 
             <CalendarView
-
+                android:id="@+id/bookAppointmentCalenderActivity_calenderView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -72,6 +74,7 @@
                 android:src="@drawable/line_divider" />
 
             <Button
+                android:id="@+id/bookAppointmentCalenderActivity_nextButton"
                 style="@style/button_style"
                 android:text="@string/button_text_next" />
 

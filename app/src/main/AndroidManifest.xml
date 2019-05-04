@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mentor">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/app_logo"
@@ -9,101 +12,89 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-
-
         android:theme="@style/AppTheme">
-
+        <activity android:name=".ProfileUserDetailsActivity"></activity>
         <activity
-            android:name="activities.FirstActivity"
+            android:name=".FirstActivity"
             android:theme="@style/AppTheme_NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
-
         <activity
-            android:name="activities.IntroActivity"
+            android:name=".IntroActivity"
             android:theme="@style/AppTheme_NoActionBar" />
-
-
         <activity
-            android:name="activities.SignInActivity"
+            android:name=".SignInActivity"
             android:theme="@style/AppTheme_NoActionBar" />
-
         <activity
-            android:name="activities.ForgotPasswordActivity"
+            android:name=".ForgotPasswordActivity"
             android:theme="@style/AppTheme_NoActionBar" />
-
         <activity
-            android:name="activities.SignUpActivity"
+            android:name=".SignUpActivity"
             android:theme="@style/AppTheme_NoActionBar" />
-
         <activity
-            android:name="activities.FindDoctorActivity"
-            android:theme="@style/AppTheme" />
-
-        <activity
-            android:name="activities.MainActivity"
-            android:theme="@style/AppTheme" />
-
-        <activity
-            android:name="activities.DoctorListActivity"
+            android:name=".FindDoctorActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="activities.DoctorActivity"
+            android:name=".MainActivity"
             android:theme="@style/AppTheme" />
-
         <activity
-            android:name="activities.CallingActivity"
+            android:name=".DoctorListActivity"
             android:theme="@style/AppTheme" />
-
-
         <activity
-            android:name="activities.ReviewActivity"
+            android:name=".DoctorActivity"
             android:theme="@style/AppTheme" />
-
+        <activity
+            android:name=".CallingActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ReviewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AppointmentDetailsActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CreateAppointmentActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".BookAppointmentCalenderActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".BookAppointmentTimeActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".NewsActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".NewsPreviewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EventListActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".UserProfileActivity" /> <!-- Facebook Start -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
 
         <activity
-            android:name="activities.AppointmentActivity"
-            android:theme="@style/AppTheme"></activity>
-
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
         <activity
-            android:name="activities.CreateAppointmentActivity"
-            android:theme="@style/AppTheme"></activity>
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
 
-        <activity
-            android:name="activities.BookAppointmentCalenderActivity"
-            android:theme="@style/AppTheme"></activity>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
 
-
-        <activity
-            android:name="activities.BookAppointmentTimeActivity"
-            android:theme="@style/AppTheme"></activity>
-
-        <activity
-            android:name="activities.NewsActivity"
-            android:theme="@style/AppTheme">
-
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
         </activity>
-
-        <activity
-            android:name="activities.NewsPreviewActivity"
-            android:theme="@style/AppTheme"></activity>
-        <activity
-            android:name="activities.EventListActivity"
-            android:theme="@style/AppTheme">
-
-        </activity>
-
-        <activity android:name="activities.UserProfileActivity"></activity>
-
-
     </application>
-
 
 </manifest>

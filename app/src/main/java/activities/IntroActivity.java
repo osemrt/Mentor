@@ -1,4 +1,4 @@
-package activities;
+package com.example.mentor;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,8 +11,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
-import com.example.mentor.R;
 
 import ui.SliderAdapter;
 

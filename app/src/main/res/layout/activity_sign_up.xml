@@ -6,26 +6,32 @@
     android:layout_height="match_parent">
 
 
-    <Toolbar
+    <LinearLayout
+        android:paddingTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:layout_above="@id/sign_up_textView"
-        android:layout_marginBottom="35dp">
+        android:layout_above="@id/forgot_password_textView"
+        android:layout_alignStart="@id/sign_up_linearLayout"
+        android:layout_marginBottom="50dp"
+        android:gravity="bottom">
 
         <ImageButton
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="55dp"
+            android:id="@+id/activity_signUp_back_button"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
             android:background="@android:color/transparent"
+            android:onClick="goBack"
+            android:paddingStart="-10dp"
+            android:paddingEnd="0dp"
             android:src="@drawable/back_arrow_bold_gray" />
-    </Toolbar>
+    </LinearLayout>
 
 
     <TextView
         android:id="@+id/sign_up_textView"
         style="@style/header_textView_style"
         android:layout_above="@id/sign_up_linearLayout"
-        android:layout_marginStart="55dp"
+        android:layout_alignStart="@id/sign_up_linearLayout"
         android:layout_marginBottom="30dp"
         android:text="@string/button_text_sign_up" />
 
@@ -35,44 +41,60 @@
         android:layout_height="wrap_content"
 
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="120dp"
-
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="50dp"
         android:divider="@drawable/divider2"
         android:gravity="center"
         android:orientation="vertical"
         android:showDividers="middle">
-
+<!--
         <EditText
+            android:id="@+id/activity_signUp_name_editText"
             style="@style/edit_text_style"
+            android:layout_width="match_parent"
             android:hint="@string/edit_text_hint_name"
             android:inputType="textPersonName" />
-
+-->
         <EditText
+            android:id="@+id/activity_signUp_email_editText"
             style="@style/edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
             android:hint="@string/edit_text_hint_email"
             android:inputType="textEmailAddress" />
 
-
+<!--
         <EditText
+            android:id="@+id/activity_signUp_mobileNumber_editText"
             style="@style/edit_text_style"
+            android:layout_width="match_parent"
             android:hint="@string/edit_text_hint_phone_number"
             android:inputType="phone" />
-
+-->
 
         <EditText
+            android:id="@+id/activity_signUp_password_editText"
             style="@style/edit_text_style"
+            android:layout_width="match_parent"
             android:hint="@string/edit_text_hint_password"
             android:inputType="textPassword" />
 
 
         <EditText
+            android:id="@+id/activity_signUp_confirmPassword_editText"
             style="@style/edit_text_style"
+            android:layout_width="match_parent"
             android:hint="@string/edit_text_hint_confirm_password"
             android:inputType="textPassword" />
 
+        <!-- TODO: Tasarımı Güncelle -->
+
         <Button
+            android:id="@+id/activity_signUp_signUp_button"
             style="@style/button_style"
+            android:layout_margin="10dp"
             android:text="@string/button_text_sign_up" />
 
     </LinearLayout>

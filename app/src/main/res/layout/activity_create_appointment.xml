@@ -23,6 +23,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
                 android:background="@android:color/transparent"
+                android:onClick="goBack"
                 android:src="@drawable/back_arrow" />
 
             <TextView
@@ -88,6 +89,7 @@
                 android:padding="10dp" />
 
             <Button
+                android:onClick="showAppointmentDetails"
                 style="@style/button_style"
                 android:text="@string/button_text_next" />
 

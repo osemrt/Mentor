@@ -1,12 +1,15 @@
 package ui;
 
 import android.content.Context;
+
+import com.example.mentor.DoctorActivity;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.mentor.R;
@@ -38,11 +41,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         RecyclerViewItem recyclerViewItem = recyclerViewItems.get(i);
 
-        viewHolder.doctorImage.setImageResource(recyclerViewItem.getImageId());
-        viewHolder.doctorName.setText(recyclerViewItem.getDoctorName());
-        viewHolder.doctorSpecialist.setText(recyclerViewItem.getSpecialist());
-        viewHolder.doctorCost.setText(Float.toString(recyclerViewItem.getCost()));
-        viewHolder.costImage.setImageResource(R.drawable.cost);
+        viewHolder.doctorCircularImageView.setImageResource(recyclerViewItem.getImageId());
+        viewHolder.doctorNameTextView.setText(recyclerViewItem.getDoctorName());
+        viewHolder.doctorSpecialistTextView.setText(recyclerViewItem.getSpecialist());
+        viewHolder.doctorCostTextView.setText(Float.toString(recyclerViewItem.getCost()));
 
 
     }
@@ -52,22 +54,34 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return recyclerViewItems.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private CircleImageView doctorImage;
-        private TextView doctorName;
-        private TextView doctorSpecialist;
-        private TextView doctorCost;
-        private ImageView costImage;
+        private CircleImageView doctorCircularImageView;
+        private TextView doctorNameTextView;
+        private TextView doctorSpecialistTextView;
+        private TextView doctorCostTextView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            doctorImage = (CircleImageView) itemView.findViewById(R.id.doctor_list_item_imageView);
-            doctorName = (TextView) itemView.findViewById(R.id.doctor_list_item_doctorName);
-            doctorSpecialist = (TextView) itemView.findViewById(R.id.doctor_list_item_doctorSpecialist);
-            doctorCost = (TextView) itemView.findViewById(R.id.doctor_list_item_doctorCost);
-            costImage = (ImageView) itemView.findViewById(R.id.doctor_list_item_doctorCostImage);
+            doctorCircularImageView = (CircleImageView) itemView.findViewById(R.id.doctor_list_item_imageView);
+            doctorNameTextView = (TextView) itemView.findViewById(R.id.doctor_list_item_doctorName);
+            doctorSpecialistTextView = (TextView) itemView.findViewById(R.id.doctor_list_item_doctorSpecialist);
+            doctorCostTextView = (TextView) itemView.findViewById(R.id.doctor_list_item_doctorCost);
+
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(context, DoctorActivity.class);
+            //TODO: will be passed ImageView!
+            //intent.putExtra("doctorImageId", getAdapterPosition());
+            intent.putExtra("doctorName", doctorNameTextView.getText().toString());
+            intent.putExtra("doctorSpecialist", doctorSpecialistTextView.getText().toString());
+            intent.putExtra("doctorCost", doctorCostTextView.getText().toString());
+            context.startActivity(intent);
+
         }
     }
 }

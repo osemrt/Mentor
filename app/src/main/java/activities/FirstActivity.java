@@ -1,4 +1,4 @@
-package activities;
+package com.example.mentor;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,8 +10,6 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-
-import com.example.mentor.R;
 
 public class FirstActivity extends AppCompatActivity {
 

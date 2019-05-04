@@ -143,6 +143,7 @@
 
 
         <Button
+            android:id="@+id/appointmentDetails_homeButton"
             style="@style/button_style"
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true"

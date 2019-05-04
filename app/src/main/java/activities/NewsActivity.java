@@ -1,6 +1,7 @@
-package activities;
+package com.example.mentor;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.mentor.R;
 
@@ -23,12 +24,17 @@ public class NewsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
 
-        newsItems = new ArrayList<>();
-        recyclerView = (RecyclerView) findViewById(R.id.news_recyclerView);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        setUp();
 
 
+        setAdapter();
+
+
+    }
+
+    private void setAdapter() {
+        //TODO: Needed the database connection!
+        //Test entries
         int[] imageIds = {R.drawable.news_1, R.drawable.news_2, R.drawable.news_3, R.drawable.news_4,
                 R.drawable.news_5, R.drawable.news_6, R.drawable.news_1, R.drawable.news_2, R.drawable.news_3,
                 R.drawable.news_4, R.drawable.news_5, R.drawable.news_6};
@@ -40,6 +46,16 @@ public class NewsActivity extends AppCompatActivity {
 
         recyclerView.setAdapter(new NewsRecyclerViewAdapter(this, newsItems));
 
+    }
 
+    private void setUp() {
+        newsItems = new ArrayList<>();
+        recyclerView = (RecyclerView) findViewById(R.id.news_recyclerView);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+    public void goBack(View v){
+        super.onBackPressed();
     }
 }

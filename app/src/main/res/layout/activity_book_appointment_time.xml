@@ -23,6 +23,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
                 android:background="@android:color/transparent"
+                android:onClick="goBack"
                 android:src="@drawable/back_arrow" />
 
             <TextView
@@ -61,6 +62,7 @@
             android:showDividers="middle">
 
             <TimePicker
+                android:id="@+id/bookAppointmentTimeActivity_timePicker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:timePickerMode="clock" />
@@ -72,8 +74,9 @@
                 android:src="@drawable/line_divider" />
 
             <Button
+                android:id="@+id/bookAppointmentTimeActivity_bookAppointmentButton"
                 style="@style/button_style"
-                android:text="@string/button_text_next" />
+                android:text="@string/toolbar_book_appointment" />
 
         </LinearLayout>
 

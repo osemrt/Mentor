@@ -1,8 +1,11 @@
-package activities;
+package com.example.mentor;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.CalendarView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +19,7 @@ import java.util.Locale;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import ui.CalendarOnSwipeTouchListener;
 
 public class EventListActivity extends AppCompatActivity implements CompactCalendarView.CompactCalendarViewListener {
 
@@ -44,6 +48,8 @@ public class EventListActivity extends AppCompatActivity implements CompactCalen
 
         compactCalendarView.setListener(this);
 
+        compactCalendarView.setOnTouchListener( new CalendarOnSwipeTouchListener(this,compactCalendarView));
+
     }
 
     @Override
@@ -59,4 +65,9 @@ public class EventListActivity extends AppCompatActivity implements CompactCalen
     public void onMonthScroll(Date firstDayOfNewMonth) {
         textView.setText(simpleDateFormat.format(firstDayOfNewMonth));
     }
+
+    public void goBack(View v){
+        super.onBackPressed();
+    }
+
 }

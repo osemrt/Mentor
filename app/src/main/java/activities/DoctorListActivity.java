@@ -1,6 +1,8 @@
-package activities;
+package com.example.mentor;
 
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -23,12 +25,18 @@ public class DoctorListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_list);
 
-        recyclerView = (RecyclerView) findViewById(R.id.doctor_list_recyclerView);
+        setUp();
+        setAdapter();
+
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        recyclerViewItems = new ArrayList<>();
 
+    }
+
+    private void setAdapter() {
+        //TODO: Needed the database connection!
+        //Test entries
         String[] names = getResources().getStringArray(R.array.test_array_doctor_names);
         String[] specialists = getResources().getStringArray(R.array.test_array_doctor_specialists);
         String[] costs = getResources().getStringArray(R.array.test_array_doctor_costs);
@@ -40,6 +48,13 @@ public class DoctorListActivity extends AppCompatActivity {
 
         recyclerView.setAdapter(new RecyclerViewAdapter(this, recyclerViewItems));
 
+    }
 
+    private void setUp() {
+        recyclerViewItems = new ArrayList<>();
+        recyclerView = (RecyclerView) findViewById(R.id.doctor_list_recyclerView);
+    }
+    public void goBack(View v){
+        super.onBackPressed();
     }
 }

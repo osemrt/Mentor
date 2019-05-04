@@ -1,6 +1,7 @@
 package ui;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +11,7 @@ import com.example.mentor.R;
 
 import java.util.ArrayList;
 
-import activities.NewsActivity;
+import com.example.mentor.NewsPreviewActivity;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -47,7 +48,7 @@ public class NewsRecyclerViewAdapter extends RecyclerView.Adapter<NewsRecyclerVi
         return newsItems.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private CircleImageView circleImageView;
         private TextView newsHeader;
@@ -60,6 +61,13 @@ public class NewsRecyclerViewAdapter extends RecyclerView.Adapter<NewsRecyclerVi
             newsHeader = (TextView) itemView.findViewById(R.id.news_title);
             newsSubtitle = (TextView) itemView.findViewById(R.id.news_subtitle);
 
+            itemView.setOnClickListener(this);
+
+        }
+
+        @Override
+        public void onClick(View v) {
+            context.startActivity(new Intent(context, NewsPreviewActivity.class));
         }
     }
 }

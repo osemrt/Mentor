@@ -58,8 +58,6 @@
     <string name="calling">Calling...</string>
 
 
-
-
     <string name="review_user_name">Lina Rose</string>
     <string name="review_user_review">The Good Doctor would really like to make you feel good. And that\'s not always a good thing. ABC\'s new medical drama</string>
     <string name="review_date">(16-04-2019)</string>
@@ -81,7 +79,6 @@
     <string name="calender_header">April 2019</string>
 
 
-    <!--Test strings-->
     <string name="test_docors_list_name">Dr. Vivek Thakur</string>
     <string name="test_docors_list_specialist">Peditrician</string>
     <string name="test_docors_list_cost">4.5</string>
@@ -96,6 +93,26 @@
     <string name="button_text_deposit">Deposit</string>
     <string name="button_text_withdraw">Withdraw</string>
     <string name="msg_account_not_found">The username and password you entered did not match our records. Please double-check and try again.</string>
+    <string name="error_message">An error has occured!</string>
+    <string name="password_mismatch">Passwords does not match!</string>
+    <string name="short_password">Password needs to be at least 6 character long</string>
+    <string name="email_reset_message">Reset Email successfully has been sent</string>
+
+    <string-array name="user_details_gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="user_details_blood_array">
+        <item> 0+</item>
+        <item> A+</item>
+        <item> B+</item>
+        <item> AB+</item>
+        <item> 0-</item>
+        <item> A-</item>
+        <item> B-</item>
+        <item> AB-</item>
+    </string-array>
 
 
 </resources>
