@@ -3,7 +3,7 @@
     package="com.example.mentor">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,15 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProfileUserDetailsActivity"/>
+        <activity android:name=".ProfileUserDetailsActivity" />
         <activity
             android:name=".FirstActivity"
             android:theme="@style/AppTheme_NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".IntroActivity"
@@ -74,6 +70,19 @@
         <activity
             android:name=".EventListActivity"
             android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name=".DoctorSideMain"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
         <activity android:name=".UserProfileActivity" /> <!-- Facebook Start -->
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

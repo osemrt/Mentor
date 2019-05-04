@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/doctorSide_profileFragment_doctorImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/test_doctor_1"
+                    app:civ_border_color="@color/colorLightGray2"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
+                    android:id="@+id/doctorSide_profileFragment_doctorReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/doctorSide_profileFragment_doctorImage"
+                    android:layout_toEndOf="@id/doctorSide_profileFragment_doctorImage"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_reviews" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gothamroundedlight"
+                        android:gravity="center"
+                        android:text="@string/doctor_reviews"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/doctorSide_profileFragment_doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/gothamroundedbold"
+                android:gravity="center"
+                android:text="@string/test_docors_list_name"
+                android:textColor="@color/colorMainBlue" />
+
+            <TextView
+                android:id="@+id/doctorSide_profileFragment_doctorSpecialist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/gothamroundedlight"
+                android:gravity="center"
+                android:text="@string/test_docors_list_specialist" />
+
+            <RelativeLayout
+
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+
+                <LinearLayout
+                    android:id="@+id/doctorSide_profileFragment_reviewsLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/profile_balance_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_empty"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="7dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gothamroundedbold"
+                                android:text="@string/balance" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/profile_account_monetary_unit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="2dp"
+                                    android:fontFamily="@font/gothamroundedbold"
+                                    android:text="@string/dollar_sign" />
+
+                                <TextView
+                                    android:id="@+id/doctorSide_profileFragment_doctorBalance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/gothamroundedbold"
+                                    android:text="@string/amount" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <Button
+                            android:id="@+id/doctorSide_profileFragment_withdrawButton"
+                            style="@style/button_style"
+                            android:layout_width="120dp"
+                            android:layout_marginStart="15dp"
+                            android:width="30dp"
+                            android:text="@string/button_text_withdraw" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/line_divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/gothamroundedbold"
+                    android:text="@string/doctor_about"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/doctorSide_profileFragment_aboutDoctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothamroundedbook"
+                    android:lineSpacingExtra="3dp"
+                    android:text="@string/doctor_about_text"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/line_divider" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/doctorSide_profileFragment_updateInformationButton"
+            style="@style/button_style"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:text="@string/doctor_updateInformation" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

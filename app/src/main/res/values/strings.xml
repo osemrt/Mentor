@@ -98,6 +98,18 @@
     <string name="short_password">Password needs to be at least 6 character long</string>
     <string name="email_reset_message">Reset Email successfully has been sent</string>
 
+    <!--to hide menu titles-->
+    <string name="empty">" "</string>
+
+    <string name="doctor_side_menuTitle_news">News</string>
+    <string name="doctor_side_menuTitle_appointments">Appointments</string>
+    <string name="doctor_side_menuTitle_profile">Profile</string>
+    <string name="doctor_updateInformation">Update Information</string>
+    <string name="doctorSide_appointment_date">04/05/19</string>
+    <string name="doctorSide_appointment_time">23:00</string>
+    <string name="dash">-</string>
+    <string name="doctor_side_recyclerViewAppointmentItem_errorText">You cannot make the call to this patient now, please wait to the appointment date and time</string>
+
     <string-array name="user_details_gender_array">
         <item>Male</item>
         <item>Female</item>
