@@ -1,2 +1,0 @@
-# Mentor
-:mortar_board:
